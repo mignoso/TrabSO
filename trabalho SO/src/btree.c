@@ -108,7 +108,6 @@ TreeNode* btree_search(BTree* tree, const char* name) {
 }
 
 void btree_insert(BTree* tree, TreeNode* key) {
-    // Verifica duplicidade antes de inserir
     if (btree_search(tree, key->name) != NULL) {
         printf("Erro: já existe um item com o nome \"%s\" no diretório.\n", key->name);
         return;

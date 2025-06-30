@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include "types.h"
 
-// Declarações das funções
 BTree* btree_create(int t);
 void btree_insert(BTree* tree, TreeNode* key);
 void btree_traverse(BTree* tree);

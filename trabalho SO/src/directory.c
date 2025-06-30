@@ -6,7 +6,6 @@
 #define MIN_DEGREE 2
 
 
-// directory.c
 TreeNode* create_directory(const char* name, Directory* parent) {
     Directory* dir = malloc(sizeof(Directory));
     dir->tree = btree_create(MIN_DEGREE);
